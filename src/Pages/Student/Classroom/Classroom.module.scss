@@ -1,0 +1,63 @@
+.wrapper {
+    margin-left: 120px;
+    padding-top: 100px;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    .subject {
+        text-transform: uppercase;
+    }
+
+    .teacher {
+        color: var(--primary-color);
+    }
+}
+
+.title {
+    position: absolute;
+    left: 180px;
+}
+
+.examList {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 80%;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.examItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    min-width: 320px;
+    margin: 20px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all linear 0.1s;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    
+    &:hover {
+        box-shadow: 0 4px 4px #ccc;
+        transform: scale(1);
+    }
+}
+
+.iconExam {
+    color: #f87418;
+    margin-right: 10px;
+    font-size: 2rem;
+}
+

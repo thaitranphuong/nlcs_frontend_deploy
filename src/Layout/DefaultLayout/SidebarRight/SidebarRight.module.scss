@@ -1,0 +1,11 @@
+.wrapper {
+    display: flex;
+    position: fixed;
+    background-color: var(--primary-color);
+    height: 100vh;
+    width: 12px;
+    flex-direction: column;
+    align-items: center;
+    right: 0;
+    z-index: 3;
+}

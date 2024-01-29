@@ -1,0 +1,106 @@
+.wrapper {
+    position: relative;
+    top: 110px;
+    left: 120px;
+    width: calc(100% - 150px);
+
+    .title {
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        background-color: #fff;
+        padding: 15px 15px 80px;
+        border-radius: 8px;
+
+        .head {
+
+            .avatar {
+                width: 90px;
+                border-radius: 50%;
+            }
+        }
+
+        .body {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                margin-right: 20px;
+                margin-top: 30px;
+
+                .label {
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    color: #4e5868;
+                    margin-bottom: 4px;
+                }
+                
+                .input {
+                    width: 500px;
+                    border: 1px solid #c3c8dc;
+
+                    
+                }
+
+                .disabled {
+                    background-color: #f1f5f9;
+                }
+
+                .inputGender {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    width: 500px;
+                    border: 1px solid #c3c8dc;
+                    padding: 5px;
+                    border-radius: 4px;
+
+                    .radio {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 40px;
+                        font-size: 1.3rem;
+
+                        .radioCircuit,.radioCircuit::before {
+                            appearance: none;
+                            border-radius: 50%;
+                            border: 1px solid var(--primary-color);
+                            margin-right: 5px;
+                            cursor: pointer;
+                        }
+
+                        .radioCircuit:checked,.radioCircuit::after {
+                            appearance: none;
+                            border-radius: 50%;
+                            margin-right: 5px;
+                            background-color: var(--primary-color);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .btnUpdate {
+            position: absolute;
+            right: 160px;
+            bottom: 20px;
+            border: none;
+            padding: 10px 30px;
+            background-color: var(--primary-color);
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+.wrapper {
+    margin-left: 120px;
+    padding-top: 100px;
+    width: calc(100% - 200px);
+    
+    .title {
+        margin-bottom: 8px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .searchBar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 3px;
+
+            .searchInput {
+                padding: 10px 40px;
+                font-size: 1.4rem;
+                font-weight: 500;
+                color: #7f7e7e;
+            }
+
+            .btnSearch {
+                position: relative;
+                z-index: 1;
+                margin-right: -30px;
+                color: #7f7e7e;
+            }
+        }
+
+        .btnCreate {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            height: 37px;
+            color: #fff;
+            background-color: rgb(104, 204, 0);
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.3rem;
+            text-decoration: none;
+
+            &:hover {
+                opacity: 0.9;
+            }
+
+            .iconCreate {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .body {
+        width: 100%;
+        background-color: #fff;
+        border-radius: 5px;
+        border: none;
+        border-collapse: collapse;
+        margin-top: 50px;
+        margin-bottom: 100px;
+
+        .row {
+            width: 100%;
+            padding: 20px;
+        
+
+            .columnHead, .column {
+                font-size: 1.4rem;
+                color: #6a6a6a;
+            }
+
+            .columnHead {
+                padding: 20px;
+                font-weight: 600;
+            }
+
+            .column {
+                padding: 10px 20px;
+                border-top: 1px solid var(--background-color);
+                font-weight: 500;
+
+                .name {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    color: #6a6a6a;
+                    text-decoration: none;
+
+                    .nameIcon {
+                        margin-right: 10px;
+                        color: rgb(249, 115, 22);
+                    }
+                }
+
+                .action {
+
+                    .updateIcon {
+                        margin-left: 10px;
+                        color:  #17a2b8;
+                        cursor: pointer;
+                    }
+
+                    .deleteIcon {
+                        margin-left: 20px;
+                        color: rgb(226, 3, 3);
+                        cursor: pointer;
+                    }
+                }
+
+                .appearIcon {
+                    color: rgb(104, 204, 0);
+                    margin-left: 20px;
+                }
+
+                .hiddenIcon {
+                    color: rgb(158, 113, 22);
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .wide {
+            min-width: 400px;
+        }
+    }
+}

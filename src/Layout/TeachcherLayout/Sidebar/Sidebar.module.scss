@@ -1,0 +1,175 @@
+.wrapper {
+    display: flex;
+    position: fixed;
+    background-color: var(--primary-color);
+    height: 100vh;
+    width: 100px;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+}
+
+.wrapperBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.logo {
+    margin-top: 25px;
+    color: var(--background-color);
+    width: 30px;
+}
+
+.wrapperBlockBtn {
+    position: relative;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 25px 20px;
+    color: var(--background-color);
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover .tooltip {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    :before {
+        content: "";
+        display: block;
+        position: absolute;
+        border-width: 5px 5px;
+        border-style: solid;
+        top: 8px;
+        right: 60px;
+        border-color: transparent #000 transparent transparent  ;
+    }
+
+    
+}
+
+.active {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border-radius: 30px;
+}
+
+.blockTop {
+    position: absolute;
+    right: -15px;
+    top: -24px;
+    width: 35px;
+    height: 24px;
+    border-bottom-right-radius: 100%;
+    background-color: var(--primary-color);
+    z-index: 1;
+}
+.blockCenter {
+    position: absolute;
+    right: -15px;
+    top: -24px;
+    width: 35px;
+    bottom: -24px;
+    background-color: var(--background-color);
+
+}
+.blockBottom {
+    position: absolute;
+    right: -15px;
+    bottom: -24px;
+    width: 35px;
+    height: 24px;
+    border-top-right-radius: 100%;
+    background-color: var(--primary-color);
+    z-index: 1;
+}
+
+.tooltip {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    border-radius: 5px;
+    height: 24px;
+    background-color: #000;
+    color: var(--background-color);
+    font-size: 1.1rem;
+    left: 70px;
+    font-weight: 500;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform-origin: -10% 50%;
+    z-index: 2;
+}
+
+.btnSetting {
+    position: absolute;
+    bottom: 20px;
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+.themeWrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    height: 45px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px var(--primary-color);
+    border-radius: 100px;
+    bottom: 40px;
+    cursor: auto;
+
+    .themeTitle {
+        color: #5f6875;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .themeColor1,
+    .themeColor2,
+    .themeColor3,
+    .themeColor4,
+    .themeColor5 {
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+        border-radius: 50%;
+
+        &:hover {
+            cursor: pointer;
+            outline: 4px solid #cbd5e1;
+        }
+    }
+
+    .themeColor1 {
+        background-color: var(--theme1);
+    }
+    .themeColor2 {
+        background-color: var(--theme2);
+    }
+    .themeColor3 {
+        background-color:  var(--theme3);
+    }
+    .themeColor4 {
+        background-color:  var(--theme4);
+    }
+    .themeColor5 {
+        background-color:  var(--theme5);
+    }
+}

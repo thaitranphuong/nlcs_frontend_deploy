@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    position: fixed;
+    background-color: var(--background-color);
+    height: 30px;
+    left: 99px;
+    bottom: 11px;
+    right: 12px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    z-index: 2;
+}

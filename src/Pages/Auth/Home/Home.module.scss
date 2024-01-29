@@ -1,0 +1,55 @@
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    .left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        .logo {
+            width: 150px;
+        }
+        .title {
+            font-size: 2.5rem;
+            margin-top: 20px;
+            color: #4f4f4f;
+        }
+    }
+    .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 350px;
+        height: 200px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgb(116, 116, 255);
+        
+        .btnRegister,.btnLogin {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            padding: 10px;
+            border-radius: 15px;
+            border: none;
+            color: #fff;
+            font-size: 1.6rem;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btnRegister {
+            background-color: #F44025;
+        }
+        .btnLogin {
+            background-color: #1171E8;
+            margin-top: 20px;
+        }
+    }
+}

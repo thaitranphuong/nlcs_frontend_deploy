@@ -1,0 +1,81 @@
+.wrapper {
+    display: flex;
+    margin-left: 120px;
+    padding-top: 100px;
+}
+
+.title {
+    position: absolute;
+    left: 235px;
+}
+
+.classList {
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 50px;
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    padding-bottom: 200px;
+
+    .classItemWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        .classItem {
+            display: flex;
+            flex-shrink: 1;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+            min-width: 167px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all linear 0.1s;
+            text-decoration: none;
+            color: #000;
+            font-weight: 700;
+        
+            .classIcon {
+                margin-right: 10px;
+                color: var(--green-color);
+            }
+        
+            .name {
+                color: var(--primary-color);
+            }
+        
+            .teacher {
+                font-size: 1rem;
+                font-weight: 400;
+                margin-top: 4px;
+                margin-left: 2px;
+                color: #607ba1;
+            }
+        
+            &:hover {
+                margin-left: -5px;
+            }
+        }
+
+        .classItemRight {
+            display: flex;
+            align-items: center;
+            padding-right: 100px;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+
+            .iconQuit {
+                color: #ff651b; 
+            }
+
+            &:hover {
+                color: #ff651b;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,62 @@
+@import 'normalize.css';
+/*Link icon: https://pictogrammers.com/library/mdi/ */
+/* import "bootstrap/dist/css/bootstrap.min.css"; */
+/* https://www.npmjs.com/package/react-toastify */
+/* dialogflow.cloud.google.com */
+
+:root {
+    --text-color: #303a4a;
+    --background-color: #f1f5f9;
+    --green-color: rgb(1, 163, 1);
+    --theme1: #1e40af;
+    --theme2: #2f3542;
+    --theme3: #8d3081;
+    --theme4: #164e63;
+    --theme5: #312e81;
+    --primary-color: var(--theme1);
+}
+
+.theme1 {
+    --primary-color: var(--theme1);
+}
+
+.theme2 {
+    --primary-color: var(--theme2);
+}
+
+.theme3 {
+    --primary-color: var(--theme3);
+}
+
+.theme4 {
+    --primary-color: var(--theme4);
+}
+
+.theme5 {
+    --primary-color: var(--theme5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: var(--background-color);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+}

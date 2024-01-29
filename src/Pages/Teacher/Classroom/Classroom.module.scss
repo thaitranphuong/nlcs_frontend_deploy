@@ -1,0 +1,325 @@
+.wrapper {
+    margin-left: 120px;
+    padding-top: 100px;
+    width: calc(100% - 200px);
+
+    .title {
+        margin-bottom: 25px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+
+        .searchBar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 3px;
+
+            .searchInput {
+                padding: 10px 40px;
+                font-size: 1.4rem;
+                font-weight: 500;
+                color: #7f7e7e;
+            }
+
+            .btnSearch {
+                position: relative;
+                z-index: 1;
+                margin-right: -30px;
+                color: #7f7e7e;
+            }
+        }
+
+        .btnCreate {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 119px;
+            height: 37px;
+            color: #fff;
+            background-color: var(--primary-color);
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.9;
+            }
+
+            .iconCreate {
+                margin-bottom: 2px;
+                margin-right: 2px;
+            }
+        }
+    }
+
+    .listClassroom {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+
+        .classroomItem {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            min-width: 312px;
+            height: 85px;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-right: 25px;
+            text-decoration: none;
+            margin-bottom: 30px;
+            cursor: pointer;
+
+            .top {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .name {
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    color: #000;
+                }
+        
+                .btnOption {
+                    color: #999;
+
+                    &:hover {
+                        background-color: var(--background-color);
+                    }
+                }
+                .modalOption.activeOption, .optionBackgorund.activeOption {
+                    display: flex;
+                }
+
+                .optionBackgorund {
+                    display: none;
+                    top: 0;
+                    left: 0;
+                    position: fixed;
+                    width: 100vw;
+                    height: 100vh;
+                    cursor: auto;
+                    z-index: 3;
+                }
+
+                .modalOption {
+                    display: none;
+                    position: absolute;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 224px;
+                    background-color: #fff;
+                    box-shadow: 0px 3px 5px #becddc;
+                    padding: 10px;
+                    border-radius: 4px;
+                    top: 20px;
+                    animation: show 0.1s linear;
+                    right: 0;
+                    transform-origin: 90% 0;
+                    z-index: 4;
+
+                    @keyframes show {
+                        from {
+                            transform: scale(0);
+                        }
+                        to {
+                            transform: scale(1);
+                        }
+                    }
+
+                    .btnUpdate {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        width: 100%;
+                        padding: 10px;
+                        border: none;
+                        background-color: #fff;
+                        border-radius: 4px;
+                        color: #575656;
+                        font-size: 1.4rem;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: var(--background-color);
+                        }
+
+                        .iconUpadte {
+                            margin-right: 7px;
+                            margin-bottom: 2px;
+                        }
+                    }
+
+                    .btnDelete {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        width: 100%;
+                        padding: 10px;
+                        border: none;
+                        background-color: #fff;
+                        border-radius: 4px;
+                        color: rgb(205, 6, 6);
+                        font-size: 1.4rem;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: var(--background-color);
+                        }
+
+                        .iconDelete {
+                            margin-right: 7px;
+                            margin-bottom: 2px;
+                        }
+                    }
+                }
+            }
+
+            .bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: #999;
+                font-size: 1.2rem;
+                font-weight: 500;
+                margin-top: 10px;
+
+                .quantity {
+
+                }
+    
+                .schoolYear {
+    
+                }
+            }
+
+
+        }
+    }
+
+    
+
+    .modalWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 3;
+
+        .modalBackground {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            opacity: 0.5;
+        }
+
+        .modal {
+            width: 550px;
+            background-color: #fff;
+            border-radius: 5px;
+            z-index: 1;
+            animation: show 0.2s linear;
+ 
+            @keyframes show {
+                from {
+                    transform: scale(0);
+                    opacity: 1;
+                }
+            }
+
+            .headModal {
+                font-size: 1.4rem;
+                font-weight: 600;
+                color: #575656;
+                padding: 10px;
+                border-bottom: 1px solid var(--background-color);
+            }
+    
+            .bodyModal {
+                padding: 15px;
+    
+                .label {
+                    font-size: 1.3rem;
+                }
+                .input {
+                    margin-top: 10px;
+                    margin-bottom: 15px;
+                    border: 2px solid var(--background-color);
+                    font-weight: 600;
+                    color: rgb(88, 88, 131);
+                }
+            }
+    
+            .fotterModal {
+                display: flex;
+                justify-content: flex-end;
+                padding: 10px;
+                border-top: 1px solid var(--background-color);
+
+                .btnCancel {
+                    width: 96px;
+                    height: 37px;
+                    border-radius: 8px;
+                    border: none;
+                    color: #878787;
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                    background-color: var(--background-color);
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+
+                .btnSave {
+                    width: 96px;
+                    height: 37px;
+                    border-radius: 8px;
+                    border: none;
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                    background-color: var(--primary-color);
+                    margin-left: 10px;
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+
+    
+    
+    
+   
+  
+}
+
+
+
+
+
+
+
+

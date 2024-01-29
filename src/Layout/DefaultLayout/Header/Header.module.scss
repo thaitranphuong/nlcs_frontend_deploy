@@ -1,0 +1,135 @@
+.wrapper {
+    display: flex;
+    position: fixed;
+    background-color: var(--background-color);
+    height: 68px;
+    left: 99px;
+    top: 11px;
+    right: 12px;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 30px;
+    z-index: 2;
+
+    &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        width: calc(100% - 40px);
+        right: 20px;
+        height: 1px;
+        top: 90%;
+        background-color: #e3e9f1;
+    }
+}
+
+.avatarWrapper {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+.avatar {
+    border-radius: 50%;
+    width: 30px;
+    box-shadow: 0 4px 8px #bfc2c6;
+}
+
+.aroundWindow {
+    position: absolute;
+    background-color: transparent;
+    cursor: auto;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.accountWindow {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 3px 10px #00000017;
+    border-radius: 8px;
+    width: 150px;
+    background-color: #fff;
+    right: 20px;
+    color: var(--text-color);
+    cursor: auto;
+    z-index: 1;
+
+    .headerWindow {
+        padding: 15px;
+
+        .username {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .role {
+            font-size: 1rem;
+            font-weight: 400;
+            color: rgb(71, 85, 105);
+        }
+    }
+    .bodyWindow {
+        display: flex;
+        border-top: 1px solid #ebeff4;
+        padding: 8px;
+        flex-direction: column;
+        font-size: 1.2rem;
+
+        .bodyItem {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text-color);
+
+            .bodyIcon {
+                margin-right: 5px;
+            }
+        }
+    }
+    .fotterWindow {
+        font-size: 1.2rem;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #ebeff4;
+
+        .logoutIcon {
+            margin-left: 2px;
+            margin-right: 6px;
+        }
+    }
+}
+
+.wrapperItem {
+    width: 134px;
+    padding: 4px 20px 4px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--background-color);
+    }
+}
+
+
+.avatarIcon {
+    margin-right: 5px;
+}
+
+.bellIcon {
+    margin: 0 12px 4px;
+    cursor: pointer;
+    color: #4c596d;
+}
+
+.flagIcon {
+    margin-bottom: 4px;
+    cursor: pointer;
+}

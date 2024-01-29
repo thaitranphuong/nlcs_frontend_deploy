@@ -1,0 +1,157 @@
+.wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    .wrapperInner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 60px;
+        width: 540px;
+        background-color: #fff;
+        border-radius: 8px;
+
+        .head {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+            color: rgb(30, 41, 59);
+
+            .message {
+                padding-top: 30px;
+                font-size: 1.8rem;
+                font-weight: 700;
+            }
+
+            .yourScore {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+
+                .text {
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    margin-right: 8px;
+                }
+
+                .score {
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            .nameExam {
+                padding: 12px 20px;
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+
+            .infoList {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                padding: 0 20px;
+
+                .infoItem {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-bottom: 12px;
+
+                    .infoLeft {
+                        align-items: center;
+                        display: flex;
+
+                        .text {
+                            margin-left: 5px;
+                            font-size: 1.4rem;
+                        }
+
+                        .iconName, .iconTime, .iconTrue, .iconFalse, .iconTotal {
+                            margin-bottom: 2px;
+                        }
+
+                        .iconTrue {
+                            color: rgb(104, 204, 0);
+                        }
+
+                        .iconFalse {
+                            color: rgb(220, 38, 38);
+                        }
+
+                        .iconTotal {
+                            color: rgb(100, 116, 139);
+                        }
+                    }
+
+                    .infoRight {
+
+                        .name {
+                            font-size: 1.4rem;
+                            font-weight: 600;
+                        }
+
+                        .time {
+                            font-size: 1.4rem;
+                            font-weight: 600;
+                        }
+                        
+                        .numberTrue {
+                            font-size: 1.3rem;
+                            color: rgb(104, 204, 0);
+                        }
+
+                        .numberFalse {
+                            font-size: 1.3rem;
+                            color: rgb(220, 38, 38);
+                        }
+
+                        .total {
+                            font-size: 1.3rem;
+                            color: rgb(100, 116, 139);
+                        }
+                    }
+                }
+            }
+
+            .returnBtn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+                width: calc(100% - 40px);
+                padding: 8px;
+                background-color: #fff;
+                color: var(--primary-color);
+                border: 1px solid var(--primary-color);
+                border-radius: 4px;
+                font-weight: 600;
+                text-decoration: none;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgba(30, 64, 175, 0.1)
+                }
+            }
+        }
+    }
+}
